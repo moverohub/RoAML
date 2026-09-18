@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="model">
+    <xs:annotation>
+      <xs:documentation>
+        Top-level model specification.
+      </xs:documentation>
+    </xs:annotation>
+
     <xs:complexType>
       <xs:sequence>
 
