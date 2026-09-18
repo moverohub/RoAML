@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="model">
+    <xs:complexType>
+      <xs:sequence>
+
+        <xs:element name="behavior_tree">
+          <xs:annotation>
+            <xs:documentation>
+              Collection of all the paths to the relevant Behavior Tree files, with their types.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="input" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="type" type="xs:string"/>
+                  <xs:attribute name="src" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="properties">
+          <xs:annotation>
+            <xs:documentation>
+              Path to the property definition file, with the type of property.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="input" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:attribute name="type" type="xs:string"/>
+                  <xs:attribute name="src" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
