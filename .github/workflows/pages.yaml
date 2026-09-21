@@ -28,7 +28,7 @@ jobs:
         uses: actions/configure-pages@v6
 
       - name: Generate XSD documentation
-        uses: bardiharborow/xsdstyle@943ce99f856de46d0293a525a931fb0a266f08d5
+        uses: moverohub/xsdstyle@d53f187d5a25d9dab9b2c5c0be06efcdc4294043
         with:
           xsd-file: spec/main.xsd
           output-dir: site
