@@ -36,7 +36,7 @@
           </xs:annotation>
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="input" minOccurs="0" maxOccurs="1">
+              <xs:element name="input" minOccurs="0" maxOccurs="2">
                 <xs:complexType>
                   <xs:attribute name="type" type="xs:string"/>
                   <xs:attribute name="src" type="xs:string"/>
